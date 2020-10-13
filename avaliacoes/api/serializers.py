@@ -8,5 +8,4 @@ class AvaliacaoSerializer(ModelSerializer):
         fields = ('id', 'comentario', 'nota', 'data')
 
 
-        def __str__(self):
-            return self.user.username
+        

@@ -19,11 +19,16 @@ from rest_framework import routers
 from core.api.viewset import PontoTuristicoViewSet
 from atracoes.api.viewset import AtracaoViewSet
 from avaliacoes.api.viewset import AvaliacaoViewSet
+from comentarios.api.viewset import ComentarioViewSet
+from enderecos.api.viewset import EnderecoViewSet
+
 
 router = routers.DefaultRouter()
 router.register(r'pontoturistico', PontoTuristicoViewSet)
 router.register(r'atracoes', AtracaoViewSet)
 router.register(r'avaliacoes', AvaliacaoViewSet)
+router.register(r'comentarios', ComentarioViewSet)
+router.register(r'enderecos', EnderecoViewSet)
 
 
 # admin.site.site_header = "Dandy Administration "

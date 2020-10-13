@@ -8,6 +8,3 @@ class AtracaoSerializer(ModelSerializer):
         fields = ('id', 'nome', 'descricao', 'horario_func', 'idade_minima')
 
         
-        def __str__(self):
-            return self.nome
-            
