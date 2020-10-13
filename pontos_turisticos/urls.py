@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from core.api.viewset import PontoTuristicoViewSet
+from atracoes.api.viewset import AtracaoViewSet
 
 router = routers.DefaultRouter()
 router.register(r'pontoturistico', PontoTuristicoViewSet)
+router.register(r'atracoes', AtracaoViewSet)
 
 
 # admin.site.site_header = "Dandy Administration "
