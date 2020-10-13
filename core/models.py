@@ -13,7 +13,11 @@ class PontoTuristico(models.Model):
     avaliacoes = models.ManyToManyField(Avaliacao)
     endereco = models.ForeignKey(
         Endereco, on_delete=models.CASCADE, null=True, blank=True)
-    
+
+
+    class Meta:
+        verbose_name_plural = 'Pontos Turisticos'
+
 
     def __str__(self):
         return self.nome

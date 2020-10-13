@@ -9,5 +9,9 @@ class Avaliacao(models.Model):
     data = models.DateTimeField(auto_now_add=True)
 
 
+    class Meta:
+        verbose_name_plural = 'Avaliações'
+
+
     def __str__(self):
         return self.user.username

@@ -10,6 +10,10 @@ class Endereco(models.Model):
     longitude = models.IntegerField(null=True, blank=True)
 
 
+    class Meta:
+        verbose_name_plural = 'Endereços'
+
+
     def __str__(self):
         return self.linha1
         
