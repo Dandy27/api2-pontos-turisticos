@@ -14,7 +14,6 @@ class PontoTuristico(models.Model):
     endereco = models.ForeignKey(
         Endereco, on_delete=models.CASCADE, null=True, blank=True)
     foto = models.ImageField(upload_to='pontos_turisticos', null=True, blank=True)
-
     class Meta:
         verbose_name_plural = 'Pontos Turisticos'
 
